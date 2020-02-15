@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Домашка 3</string>
+    <string name="new_note_title">Новая заметка</string>
+    <string name="note_header">Заголовок</string>
+    <string name="hint_text_note">Текст заметки</string>
+    <string name="save_note_text">save</string>
+</resources>
