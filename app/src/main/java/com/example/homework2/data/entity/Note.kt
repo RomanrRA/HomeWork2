@@ -12,7 +12,7 @@ data class Note(
     val text: String = "",
     val color: Color = Color.WHITE,
     val lastChanged: Date = Date()
-): Parcelable {
+) : Parcelable {
 
     override fun equals(other: Any?): Boolean {
         if (this === other) return true

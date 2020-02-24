@@ -14,17 +14,34 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:layout_scrollFlags="scroll|enterAlways"
             android:theme="@style/Theme.AppCompat.Light.DarkActionBar"
-            app:title="Notes App"/>
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:title="Notes App" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimaryDark" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <com.example.homework2.ui.customviews.ColorPickerView
+                android:id="@+id/colorPicker"
+                android:layout_width="wrap_content"
+                android:layout_height="?attr/actionBarSize" />
+
+        </HorizontalScrollView>
 
 
     </com.google.android.material.appbar.AppBarLayout>
 
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:orientation="vertical"
         android:padding="16dp"
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
@@ -38,7 +55,7 @@
                 android:id="@+id/et_title"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="@android:color/black"/>
+                android:textColor="@android:color/black" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <androidx.appcompat.widget.AppCompatEditText
@@ -47,7 +64,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:background="@null"
-            android:hint="@string/hint_text_note"/>
+            android:hint="@string/hint_text_note" />
 
     </LinearLayout>
 
@@ -55,7 +72,7 @@
         android:id="@+id/submit_note_text_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/save_note_text"
-        android:layout_gravity="bottom"/>
+        android:layout_gravity="bottom"
+        android:text="@string/save_note_text" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
